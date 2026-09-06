@@ -1,0 +1,9 @@
+❌ MongoDB Connection Error: connect ECONNREFUSED 127.0.0.1:27017
+❌ Email test failed: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-328713b0451sm20906061eec.16 - gsmtp
+❌ Failed to save to database: Operation `submissions.insertOne()` buffering timed out after 10000ms
+❌ Failed to save to database: Operation `submissions.insertOne()` buffering timed out after 10000ms
+Failed to send email: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-142e0dc898dsm16175918c88.9 - gsmtp
+Failed to send email: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-3286f7be440sm19924634eec.7 - gsmtp

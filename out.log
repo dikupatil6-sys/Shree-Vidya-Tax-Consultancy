@@ -1,0 +1,29 @@
+[dotenv@17.2.3] injecting env (7) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+Email Config Check:
+User: Set
+Pass: Set
+Recipient: Set
+Resend API key: Not Set
+Mongo: Set
+Server running on http://localhost:3010
+Serving frontend from C:\Users\acer\OneDrive\Desktop\cyber-cafe-website
+
+=== EMAIL TEST ===
+Recipient: jasaihigh4@gmail.com
+Sender mechanism: Gmail SMTP
+=== NEW SUBMISSION ===
+Name: diksha
+Phone: 7977079148
+Email: Not Provided
+Service: Quick Inquiry
+Notes: hi
+Files received: 0
+=== NEW SUBMISSION ===
+Name: diksha
+Phone: 7977079148
+Email: Not Provided
+Service: General Inquiry
+Notes: hi
+Files received: 0
+Sending success response: {"ok":true,"message":"Submission saved locally (Email notification skipped)","warning":"Email failed: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials a92af1059eb24-142e0dc898dsm16175918c88.9 - gsmtp","data":{"name":"diksha","phone":"7977079148","email":"Not Provided","service":"Quick Inquiry","fileCount":0}}
+Sending success response: {"ok":true,"message":"Submission saved locally (Email notification skipped)","warning":"Email failed: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5a478bee46e88-3286f7be440sm19924634eec.7 - gsmtp","data":{"name":"diksha","phone":"7977079148","email":"Not Provided","service":"General Inquiry","fileCount":0}}

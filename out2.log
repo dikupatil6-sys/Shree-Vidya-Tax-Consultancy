@@ -1,0 +1,46 @@
+[dotenv@17.2.3] injecting env (7) from ..\.env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+Email Config Check:
+User: Set
+Pass: Set
+Recipient: Set
+Resend API key: Set
+Mongo: Set
+Server running on http://localhost:3010
+Serving frontend from C:\Users\acer\OneDrive\Desktop\cyber-cafe-website
+=== NEW SUBMISSION ===
+Name: Test User
+Phone: 7977079148
+Email: test@example.com
+Service: Quick Inquiry
+Notes: diagnostic test
+Files received: 0
+Email sent successfully
+Sending success response: {"ok":true,"message":"Submission received and sent via resend","warning":null,"data":{"name":"Test User","phone":"7977079148","email":"test@example.com","service":"Quick Inquiry","fileCount":0}}
+=== NEW SUBMISSION ===
+Name: Test User
+Phone: 7977079148
+Email: test@example.com
+Service: Quick Inquiry
+Notes: with attachment
+Files received: 1
+  File 0: testfile.txt (28 bytes)
+Email sent successfully
+Sending success response: {"ok":true,"message":"Submission received and sent via resend","warning":null,"data":{"name":"Test User","phone":"7977079148","email":"test@example.com","service":"Quick Inquiry","fileCount":1}}
+=== NEW SUBMISSION ===
+Name: Browser Test
+Phone: 7977079148
+Email: test@example.com
+Service: Quick Inquiry
+Notes: undefined
+Files received: 0
+Email sent successfully
+Sending success response: {"ok":true,"message":"Submission received and sent via resend","warning":null,"data":{"name":"Browser Test","phone":"7977079148","email":"test@example.com","service":"Quick Inquiry","fileCount":0}}
+=== NEW SUBMISSION ===
+Name: Timing Test
+Phone: 7977079148
+Email: t@t.com
+Service: Quick Inquiry
+Notes: undefined
+Files received: 0
+Email sent successfully
+Sending success response: {"ok":true,"message":"Submission received and sent via resend","warning":null,"data":{"name":"Timing Test","phone":"7977079148","email":"t@t.com","service":"Quick Inquiry","fileCount":0}}
