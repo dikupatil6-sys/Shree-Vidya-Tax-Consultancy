@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shree Vidya Tax Consultancy – Digital Service Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="logo.0.png?v=2">
+<link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head> 
+
+<body>
+
+<div data-include="partials/header.html"></div>
+
+<main id="main" tabindex="-1">
+
+<!-- ===== HERO ===== -->
+<div class="hero">
+    <div>
+        <div class="page-kicker" style="margin-bottom: 12px;">Welcome to</div>
+        <h1>Expert Tax &amp; <br><span>Digital Solutions</span></h1>
+        <p>
+            Shree Vidya Tax Consultancy provides professional assistance for Income Tax Returns, 
+            government documentation, and essential digital services for individuals and businesses.
+        </p>
+
+        <div class="hero-buttons">
+            <button class="btn primary" onclick="goTo('services')">View Our Services</button>
+            <button class="btn secondary" onclick="goTo('contact')">Contact Support</button>
+        </div>
+    </div>
+
+    <div class="dashboard">
+        <div style="background: rgba(37, 99, 235, 0.04); padding: 24px; border-radius: 12px; border: 1px solid rgba(37, 99, 235, 0.15);">
+            <h3 style="color: #2563eb; font-size: 1.2rem; margin-bottom: 16px;">Quick Inquiry</h3>
+            <form id="quick-inquiry-form">
+                <input type="text" name="name" placeholder="Your Name" required style="width: 100%; margin-bottom: 12px; padding: 10px; border-radius: 6px; border: 1px solid rgba(37, 99, 235, 0.2); background: #ffffff; color: #1f1f1f;">
+                <input type="tel" name="phone" placeholder="Mobile Number" required style="width: 100%; margin-bottom: 12px; padding: 10px; border-radius: 6px; border: 1px solid rgba(37, 99, 235, 0.2); background: #ffffff; color: #1f1f1f;">
+                <textarea name="notes" placeholder="Ask about pricing or services..." rows="2" required style="width: 100%; margin-bottom: 12px; padding: 10px; border-radius: 6px; border: 1px solid rgba(37, 99, 235, 0.2); background: #ffffff; color: #1f1f1f;"></textarea>
+                <button type="submit" class="btn primary" style="width: 100%; font-size: 0.9rem;">Send Inquiry</button>
+            </form>
+        </div>
+       
+    </div>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<section id="services" style="padding: 80px 40px; max-width: 1200px; margin: 0 auto;">
+    <div class="section-header">
+        <div class="page-kicker" style="text-align: center; margin-bottom: 8px;">What We Offer</div>
+        <h2>Our Professional Services</h2>
+        <p>Comprehensive digital and documentation support tailored to your needs.</p>
+    </div>
+
+    <!-- Taxation Services -->
+    <div class="quick-category">
+        <h3>Taxation Services</h3>
+        <ul class="quick-list">
+            <li class="quick-item"><span class="quick-name">All CA Work</span><button class="btn primary" onclick="selectService('All CA Work')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Income Tax Return File</span><button class="btn primary" onclick="selectService('Income Tax Return File')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Accounting Work up to Finalization</span><button class="btn primary" onclick="selectService('Accounting Work up to Finalization')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Audit Work</span><button class="btn primary" onclick="selectService('Audit Work')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">GST Return Filing</span><button class="btn primary" onclick="selectService('GST Return Filing')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">LLP Registration</span><button class="btn primary" onclick="selectService('LLP Registration')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Private Limited Company Formation</span><button class="btn primary" onclick="selectService('Private Limited Company Formation')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Project Report (CMFGP/PMEGP)</span><button class="btn primary" onclick="selectService('Project Report')">Apply Now</button></li>
+        </ul>
+    </div>
+
+    <!-- Loan Services -->
+    <div class="quick-category">
+        <h3>Loan Services</h3>
+        <ul class="quick-list">
+            <li class="quick-item"><span class="quick-name">Personal Loan (Salaried)</span><button class="btn primary" onclick="selectService('Personal Loan')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Home Loan</span><button class="btn primary" onclick="selectService('Home Loan')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Business Loan</span><button class="btn primary" onclick="selectService('Business Loan')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Mortgage Loan</span><button class="btn primary" onclick="selectService('Mortgage Loan')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">LAP (Loan against Property)</span><button class="btn primary" onclick="selectService('LAP')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">BT Loan (Balance Transfer)</span><button class="btn primary" onclick="selectService('BT Loan')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Vehicle Loan</span><button class="btn primary" onclick="selectService('Vehicle Loan')">Apply Now</button></li>
+        </ul>
+    </div>
+
+    <!-- Company Registration Certificate -->
+    <div class="quick-category">
+        <h3>Company Registration & Certificates</h3>
+        <ul class="quick-list">
+            <li class="quick-item"><span class="quick-name">Food Fssai</span><button class="btn primary" onclick="selectService('Food Fssai')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Gumasta License</span><button class="btn primary" onclick="selectService('Gumasta License')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Udyam Certificate</span><button class="btn primary" onclick="selectService('Udyam Certificate')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">PTRC & PTEC Certificate</span><button class="btn primary" onclick="selectService('PTRC & PTEC Certificate')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">ESIC Certificate</span><button class="btn primary" onclick="selectService('ESIC Certificate')">Apply Now</button></li>
+        </ul>
+    </div>
+
+    <!-- PF Services -->
+    <div class="quick-category">
+        <h3>PF Services</h3>
+        <ul class="quick-list">
+            <li class="quick-item"><span class="quick-name">KYC and Nomination</span><button class="btn primary" onclick="selectService('PF KYC and Nomination')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">PF Withdraws Advanced</span><button class="btn primary" onclick="selectService('PF Withdraws Advanced')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">PF Settlement Withdraw</span><button class="btn primary" onclick="selectService('PF Settlement Withdraw')">Apply Now</button></li>
+        </ul>
+    </div>
+
+    <!-- Online Work -->
+    <div class="quick-category">
+        <h3>Online Work</h3>
+        <ul class="quick-list">
+            <li class="quick-item"><span class="quick-name">Pan Card</span><button class="btn primary" onclick="selectService('Pan Card')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Voting Card</span><button class="btn primary" onclick="selectService('Voting Card')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Passport</span><button class="btn primary" onclick="selectService('Passport')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Ration Card</span><button class="btn primary" onclick="selectService('Ration Card')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Married Certificate</span><button class="btn primary" onclick="selectService('Married Certificate')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Gazette</span><button class="btn primary" onclick="selectService('Gazette')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Online Form Fillup</span><button class="btn primary" onclick="selectService('Online Form Fillup')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Online Work</span><button class="btn primary" onclick="selectService('Online Work')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Typing Work</span><button class="btn primary" onclick="selectService('Typing Work')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">E-shram Card</span><button class="btn primary" onclick="selectService('E-shram Card')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">ABHA Card</span><button class="btn primary" onclick="selectService('ABHA Card')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Ayushman Card</span><button class="btn primary" onclick="selectService('Ayushman Card')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Rent Agreement</span><button class="btn primary" onclick="selectService('Rent Agreement')">Apply Now</button></li>
+        </ul>
+    </div>
+    
+    <!-- Web Design -->
+    <div class="quick-category">
+        <h3>Web Design</h3>
+        <ul class="quick-list">
+             <li class="quick-item"><span class="quick-name">Web Design Services</span><button class="btn primary" onclick="selectService('Web Design')">Apply Now</button></li>
+        </ul>
+    </div>
+
+    <!-- Aple Sarkar -->
+    <div class="quick-category">
+        <h3>Aple Sarkar</h3>
+        <ul class="quick-list">
+            <li class="quick-item"><span class="quick-name">Income Certificate</span><button class="btn primary" onclick="selectService('Income Certificate')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Domicile Certificate</span><button class="btn primary" onclick="selectService('Domicile Certificate')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Temporary Residence Cert</span><button class="btn primary" onclick="selectService('Temporary Residence Certificate')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Farmer Certificate</span><button class="btn primary" onclick="selectService('Farmer Certificate')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Senior Citizen Certificate</span><button class="btn primary" onclick="selectService('Senior Citizen Certificate')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Caste Certificate</span><button class="btn primary" onclick="selectService('Caste Certificate')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Non-Creamy Layer Cert</span><button class="btn primary" onclick="selectService('Non-Creamy Layer Certificate')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Character Certificate</span><button class="btn primary" onclick="selectService('Character Certificate')">Apply Now</button></li>
+        </ul>
+    </div>
+
+    <!-- RTO Work -->
+    <div class="quick-category">
+        <h3>RTO Work</h3>
+        <ul class="quick-list">
+            <li class="quick-item">
+                <span class="quick-name">License</span>
+                <button class="btn primary" onclick="selectService('License')">Apply Now</button>
+            </li>
+            <li class="quick-item"><span class="quick-name">Vehicle Road Tax, Green Tax</span><button class="btn primary" onclick="selectService('Vehicle Road Tax')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Professional Tax</span><button class="btn primary" onclick="selectService('Professional Tax')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Permit</span><button class="btn primary" onclick="selectService('Permit')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">RC</span><button class="btn primary" onclick="selectService('RC')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Fitness</span><button class="btn primary" onclick="selectService('Fitness')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Vehicle Passing</span><button class="btn primary" onclick="selectService('Vehicle Passing')">Apply Now</button></li>
+            <li class="quick-item"><span class="quick-name">Other Work in RTO</span><button class="btn primary" onclick="selectService('Other Work in RTO')">Apply Now</button></li>
+        </ul>
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" style="padding: 80px 40px; max-width: 1200px; margin: 0 auto;">
+    <div class="section-header">
+        <div class="page-kicker" style="text-align: center; margin-bottom: 8px;">Who We Are</div>
+        <h2>About Us</h2>
+        <p>Shree Vidya Tax Consultancy is your trusted partner for all government and financial documentation needs.</p>
+    </div>
+
+    <div class="why-card">
+        <h3 style="color: #2563eb; font-size: 1.5rem; margin-bottom: 24px; text-align: center;">Our Services</h3>
+        <ul class="why-list">
+            <li class="why-item">
+                <h4>Taxation Services</h4>
+                <p>Expert assistance with Income Tax Returns, GST filing, accounting, audits, and project reports for business growth.</p>
+            </li>
+            <li class="why-item">
+                <h4>Loans Services</h4>
+                <p>Comprehensive loan solutions including Personal, Home, Business, Mortgage, and Vehicle loans tailored to your financial needs.</p>
+            </li>
+            <li class="why-item">
+                <h4>Company Registration & Certificates</h4>
+                <p>End-to-end support for Shop Act, Udyam Registration, Food Licenses (FSSAI), and Company Formation.</p>
+            </li>
+            <li class="why-item">
+                <h4>PF Services</h4>
+                <p>Hassle-free Provident Fund services including withdrawals, claims settlement, KYC updates, and nomination management.</p>
+            </li>
+            <li class="why-item">
+                <h4>Online Work</h4>
+                <p>One-stop solution for Pan Cards, Passports, Ration Cards, and various online application forms.</p>
+            </li>
+            <li class="why-item">
+                <h4>Aple Sarkar</h4>
+                <p>Authorized assistance for Income, Domicile, Caste, and other essential government certificates.</p>
+            </li>
+            <li class="why-item">
+                <h4>RTO Work</h4>
+                <p>Complete RTO services for Driving Licenses, Vehicle Registration, Road Tax, and Permits.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ===== PRICING & INQUIRY ===== -->
+<section id="pricing-inquiry" style="padding: 80px 40px; max-width: 1200px; margin: 0 auto;">
+    <div class="section-header">
+        <div class="page-kicker" style="text-align: center; margin-bottom: 8px;">Pricing & Payments</div>
+        <h2>Inquiry & Payment</h2>
+        <p>Ask about our service charges or make a direct payment.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: start;">
+        
+        <!-- Inquiry Form -->
+        <div class="why-card" style="margin-top: 0;">
+            <h3 style="color: #2563eb; font-size: 1.25rem; margin-bottom: 16px;">Service & Pricing Inquiry</h3>
+            <p style="color: #575757; margin-bottom: 24px; font-size: 0.95rem;">
+            
+            </p>
+            <form id="inquiry-form">
+                <label class="form-row" style="display: block; margin-bottom: 16px;">Your Name
+                    <input type="text" name="name" placeholder="Enter your name" required style="width: 100%; margin-top: 8px; padding: 12px; border-radius: 8px; border: 1px solid rgba(37, 99, 235, 0.2); background: #ffffff; color: #1f1f1f;">
+                </label>
+                <label class="form-row" style="display: block; margin-bottom: 16px;">Mobile Number
+                    <input type="tel" name="phone" placeholder="Enter mobile number" required style="width: 100%; margin-top: 8px; padding: 12px; border-radius: 8px; border: 1px solid rgba(37, 99, 235, 0.2); background: #ffffff; color: #1f1f1f;">
+                </label>
+                <label class="form-row" style="display: block; margin-bottom: 16px;">Email Address
+                    <input type="email" name="email" placeholder="Enter your email" required style="width: 100%; margin-top: 8px; padding: 12px; border-radius: 8px; border: 1px solid rgba(37, 99, 235, 0.2); background: #ffffff; color: #1f1f1f;">
+                </label>
+                <label class="form-row" style="display: block; margin-bottom: 24px;">Your Question / Service Name
+                    <textarea name="notes" placeholder="Ask about pricing or service details..." rows="3" required style="width: 100%; margin-top: 8px; padding: 12px; border-radius: 8px; border: 1px solid rgba(37, 99, 235, 0.2); background: #ffffff; color: #1f1f1f;"></textarea>
+                </label>
+                <button type="submit" class="btn primary" style="width: 100%;">Send Inquiry</button>
+            </form>
+        </div>
+
+        <!-- Payment Details -->
+        <div class="why-card" style="margin-top: 0; text-align: center;">
+            <h3 style="color: #2563eb; font-size: 1.25rem; margin-bottom: 24px;">Payment Options</h3>
+            
+            <!-- QR Code Placeholder -->
+            <div style="background: white; width: 200px; height: 200px; margin: 0 auto 24px auto; display: flex; align-items: center; justify-content: center; border-radius: 12px; overflow: hidden;">
+                <img src="scanner.jpeg" alt="Scan to Pay" style="width: 100%; height: 100%; object-fit: cover; object-position: center 40%; transform: scale(1.6);">
+            </div>
+
+            <div style="margin-bottom: 24px;">
+                <h4 style="color: #111111; margin-bottom: 8px;">GPay / PhonePe Accepted</h4>
+                <p style="color: #575757;">Scan the code above to pay instantly.</p>
+            </div>
+
+            <div style="background: rgba(37, 99, 235, 0.08); padding: 16px; border-radius: 8px; border: 1px solid rgba(37, 99, 235, 0.2); display: inline-block; width: 100%;">
+                <p style="color: #2563eb; font-weight: bold; font-size: 0.9rem; margin-bottom: 4px;">PHONE PE NUMBER</p>
+                <p style="color: #1f1f1f; font-size: 1.2rem; font-weight: 700; letter-spacing: 1px;">87792 86482</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" aria-labelledby="contact-heading" style="padding: 80px 40px; max-width: 1200px; margin: 0 auto;">
+    <div class="section-header">
+        <div class="page-kicker" style="text-align: center; margin-bottom: 8px;">Get In Touch</div>
+        <h2 id="contact-heading">Contact & Support</h2>
+    </div>
+
+    <div class="contact-grid">
+        <div class="contact-item">
+            <h3>📍 Location</h3>
+            <p>Maharashtra</p>
+        </div>
+
+        <div class="contact-item">
+            <h3>📞 Phone</h3>
+            <p><a href="tel:+918779286482">+91 87792 86482</a></p>
+        </div>
+
+        <div class="contact-item">
+            <h3>📧 Email</h3>
+            <p><a href="mailto:jasaihigh4@gmail.com">jasaihigh4@gmail.com</a></p>
+        </div>
+
+        <div class="contact-item">
+            <h3>🕘 Working Hours</h3>
+            <p>9 AM – 9 PM</p>
+        </div>
+    </div>
+
+    <p class="contact-action"><button class="btn primary" onclick="callNow()">Call Now</button></p>
+</section>  
+
+</main>
+
+<div data-include="partials/footer.html"></div>
+
+<!-- Submission Modal (opened when a service is selected) -->
+<div id="submission-modal" class="modal" aria-hidden="true">
+  <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button type="button" class="modal-close" aria-label="Close">&times;</button>
+    <h3 id="modal-title">Submit Documents</h3>
+    <p id="modal-service" class="muted">Service: —</p>
+
+    <form id="submission-form">
+      <input type="hidden" name="service" id="form-service">
+
+      <label class="form-row">Name
+        <input type="text" name="name" id="form-name" required>
+      </label>
+
+      <label class="form-row">Contact
+        <input type="tel" name="phone" id="form-phone" required>
+      </label>
+
+      <label class="form-row">Email
+        <input type="email" name="email" id="form-email" required>
+      </label>
+
+      <label class="form-row">Message
+        <textarea name="notes" id="form-notes" rows="3" placeholder="Any details for the shopkeeper..."></textarea>
+      </label>
+
+      <label class="form-row">Document
+        <input type="file" name="files" id="form-files" multiple required>
+      </label>
+
+      <div class="modal-actions">
+        <button type="submit" class="btn primary">Submit</button>
+        <button type="button" class="btn secondary modal-cancel">Cancel</button>
+      </div>
+    </form>
+
+    <div id="scan-screen" class="scan-screen" hidden>
+      <div class="scanner" aria-hidden="true">
+        <div class="scan-bar"></div>
+      </div>
+      <p id="scan-text">Sending documents to shopkeeper...</p>
+    </div>
+
+    <div id="submit-success" class="submit-success" hidden>
+      <h4>Done — Documents sent</h4>
+      <p>We have forwarded your documents to the shopkeeper. They will contact you soon.</p>
+      <button type="button" class="btn primary modal-close">OK</button>
+    </div>
+
+    <div id="submit-error" class="submit-error" hidden>
+      <h4>Something went wrong</h4>
+      <p id="error-msg">Unable to send documents. Try again later.</p>
+      <button type="button" class="btn secondary modal-close">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== JAVASCRIPT (NO ERRORS) ===== -->
+<!-- Handled by script.js -->
+
+</body>
+</html>

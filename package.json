@@ -1,29 +1,17 @@
 {
-  "name": "wrappy",
-  "version": "1.0.2",
-  "description": "Callback wrapping utility",
-  "main": "wrappy.js",
-  "files": [
-    "wrappy.js"
-  ],
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "tap": "^2.3.1"
-  },
+  "name": "cyber-cafe-website",
+  "version": "1.0.0",
+  "description": "Shree Vidya Tax Consultancy website with email submission backend for Vercel",
+  "private": true,
   "scripts": {
-    "test": "tap --coverage test/*.js"
+    "dev:server": "node server/index.js",
+    "dev": "vercel dev",
+    "build": "echo \"Static site - no build step required\""
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/npm/wrappy"
-  },
-  "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/npm/wrappy/issues"
-  },
-  "homepage": "https://github.com/npm/wrappy"
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.12",
+    "resend": "^4.0.0"
+  }
 }

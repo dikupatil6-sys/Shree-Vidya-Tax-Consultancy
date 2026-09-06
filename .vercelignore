@@ -1,0 +1,15 @@
+.env
+**/.env
+node_modules/
+server/node_modules/
+server/uploads/
+server/index.js
+server/test-email.js
+server/test.txt
+server/package.json
+server/package-lock.json
+server/err*.log
+server/out*.log
+err*.log
+out*.log
+test.txt

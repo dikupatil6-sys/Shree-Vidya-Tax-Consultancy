@@ -1,0 +1,64 @@
+[dotenv@17.2.3] injecting env (7) from ..\.env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+Email Config Check:
+User: Set
+Pass: Set
+Recipient: Set
+Resend API key: Set
+Mongo: Set
+Server running on http://localhost:3010
+Serving frontend from C:\Users\acer\OneDrive\Desktop\cyber-cafe-website
+=== NEW SUBMISSION ===
+Name: Diagnostic User
+Phone: 7977078648
+Email: test@example.com
+Service: Quick Inquiry
+Notes: diagnostic
+Files received: 0
+Email sent successfully
+Sending success response: {"ok":true,"message":"Submission received and sent via resend","warning":null,"data":{"name":"Diagnostic User","phone":"7977078648","email":"test@example.com","service":"Quick Inquiry","fileCount":0}}
+=== NEW SUBMISSION ===
+Name: Validation User
+Phone: 7977078648
+Email: test@example.com
+Service: General Inquiry
+Notes: validation
+Files received: 0
+Email sent successfully
+Sending success response: {"ok":true,"message":"Submission received and sent via resend","warning":null,"data":{"name":"Validation User","phone":"7977078648","email":"test@example.com","service":"General Inquiry","fileCount":0}}
+=== NEW SUBMISSION ===
+Name: LAN Validation
+Phone: 7977078648
+Email: test@example.com
+Service: General Inquiry
+Notes: LAN validation
+Files received: 0
+Email sent successfully
+Sending success response: {"ok":true,"message":"Submission received and sent via resend","warning":null,"data":{"name":"LAN Validation","phone":"7977078648","email":"test@example.com","service":"General Inquiry","fileCount":0}}
+=== NEW SUBMISSION ===
+Name: diksha
+Phone: 7977079148
+Email: Not Provided
+Service: Quick Inquiry
+Notes: a
+Files received: 0
+=== NEW SUBMISSION ===
+Name: diksha
+Phone: 7977079148
+Email: Not Provided
+Service: General Inquiry
+Notes: a
+Files received: 0
+Email sent successfully
+Sending success response: {"ok":true,"message":"Submission received and sent via resend","warning":null,"data":{"name":"diksha","phone":"7977079148","email":"Not Provided","service":"General Inquiry","fileCount":0}}
+Email sent successfully
+Sending success response: {"ok":true,"message":"Submission received and sent via resend","warning":null,"data":{"name":"diksha","phone":"7977079148","email":"Not Provided","service":"Quick Inquiry","fileCount":0}}
+=== NEW SUBMISSION ===
+Name: atharva
+Phone: 4985857473
+Email: test@mail123.com
+Service: Personal Loan
+Notes: hii
+Files received: 1
+  File 0: aai.jpg (307097 bytes)
+Email sent successfully
+Sending success response: {"ok":true,"message":"Submission received and sent via resend","warning":null,"data":{"name":"atharva","phone":"4985857473","email":"test@mail123.com","service":"Personal Loan","fileCount":1}}
